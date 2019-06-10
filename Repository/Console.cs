@@ -31,7 +31,7 @@ namespace Repository
         }
     }
 
-    interface IConsole
+    public interface IConsole
     {
         void WriteLine(string message);
         string Readline();

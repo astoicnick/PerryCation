@@ -7,7 +7,7 @@ using System.Net.Mail;
 
 namespace Repository
 {
-    interface ISubscriptionRepository
+    public interface ISubscriptionRepository
     {
         bool AddContentToList(Subscription subToAdd);
         List<Subscription> GetSubscriptionList();
@@ -15,5 +15,6 @@ namespace Repository
         bool RemoveContent(Subscription toRemove);
         void CancelSubscription(Subscription toCancel);
         bool VerifySubscriber(string emailToVerify, string passwordToVerify);
+        Subscription FindSubscriber(string email);
     }
 }

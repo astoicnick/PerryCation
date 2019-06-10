@@ -1,0 +1,6 @@
+C:\Users\Nick\source\repos\PerryCation\Repository\bin\Debug\Repository.dll
+C:\Users\Nick\source\repos\PerryCation\Repository\bin\Debug\Repository.pdb
+C:\Users\Nick\source\repos\PerryCation\Repository\obj\Debug\Subscriptions.csprojAssemblyReference.cache
+C:\Users\Nick\source\repos\PerryCation\Repository\obj\Debug\Subscriptions.csproj.CoreCompileInputs.cache
+C:\Users\Nick\source\repos\PerryCation\Repository\obj\Debug\Repository.dll
+C:\Users\Nick\source\repos\PerryCation\Repository\obj\Debug\Repository.pdb

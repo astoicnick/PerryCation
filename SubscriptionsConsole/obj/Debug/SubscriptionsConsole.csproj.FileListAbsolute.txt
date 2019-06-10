@@ -1,0 +1,10 @@
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\obj\Debug\SubscriptionsConsole.csprojAssemblyReference.cache
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\obj\Debug\SubscriptionsConsole.csproj.CoreCompileInputs.cache
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\bin\Debug\SubscriptionsConsole.exe.config
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\bin\Debug\SubscriptionsConsole.exe
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\bin\Debug\SubscriptionsConsole.pdb
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\bin\Debug\Repository.dll
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\bin\Debug\Repository.pdb
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\obj\Debug\SubscriptionsConsole.csproj.CopyComplete
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\obj\Debug\SubscriptionsConsole.exe
+C:\Users\Nick\source\repos\PerryCation\SubscriptionsConsole\obj\Debug\SubscriptionsConsole.pdb

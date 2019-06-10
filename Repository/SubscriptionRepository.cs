@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
@@ -10,17 +11,6 @@ namespace Repository
     public class SubscriptionRepository : ISubscriptionRepository
     {
         private List<Subscription> _subscriptions = new List<Subscription>();
-        private void AddInitialContent()
-        {
-            Subscription testOne = new Subscription(Subscription.SubscriptionType.upfront, "Nick",
-                "Perry", "perry184@purdue.edu", "fakePassword123@", "1234-4215-5482-2451", "11/23",
-                "123-25-4521", true) ;
-            Subscription testTwo = new Subscription(Subscription.SubscriptionType.subscribedegree,
-                "Mick", "Jerry", "kerry184@purdue.edu", "fakeBassword123@",
-                "1234-4215-5482-2452", "12/23","123-25-4521", true);
-            AddContentToList(testOne);
-            AddContentToList(testTwo);
-        }
 
         public bool AddContentToList(Subscription ToAdd)
         {
@@ -34,6 +24,18 @@ namespace Repository
             {
                 return false;
             }
+        }
+
+        public void AddInitialContent()
+        {
+        Subscription testOne = new Subscription(Subscription.SubscriptionType.upfront, "Nick",
+                "Perry", "perry184@purdue.edu", "fakePassword123@", "1234-4215-5482-2451", "11/23",
+                "123-25-4521", true);
+        Subscription testTwo = new Subscription(Subscription.SubscriptionType.subscribedegree,
+                "Mick", "Jerry", "kerry184@purdue.edu", "fakeBassword123@",
+                "1234-4215-5482-2452", "12/23", "123-25-4521", true);
+        AddContentToList(testOne);
+        AddContentToList(testTwo);
         }
         public List<Subscription> GetSubscriptionList()
         {
@@ -91,6 +93,17 @@ namespace Repository
             }
             return false;
         }
+        public Subscription FindSubscriber(string email)
+        {
+            foreach (Subscription subscription in _subscriptions)
+            {
+                if (subscription.EmailAddress == email)
+                {
+                    return subscription;
+                }
+            }
+            return null;
+        }
     }
     public class MockRepository : ISubscriptionRepository
     {
@@ -102,6 +115,11 @@ namespace Repository
         public void CancelSubscription(Subscription toCancel)
         {
            return;
+        }
+
+        public Subscription FindSubscriber(string email)
+        {
+           return null;
         }
 
         public List<Subscription> GetSubscriptionList()

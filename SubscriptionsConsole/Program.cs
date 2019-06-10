@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Repository;
 
 namespace SubscriptionsConsole
 {
     class Program
     {
-        public void Main()
+        public static void Main()
         {
-            ProgramUI ui = new ProgramUI();
-
+            var repo = new SubscriptionRepository();
+            ProgramUI ui = new ProgramUI(repo, new Repository.Console());
+            repo.AddInitialContent();
+            ui.Run();
+            
         }
     }
 }
