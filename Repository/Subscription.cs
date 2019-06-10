@@ -13,17 +13,17 @@ namespace Repository
         public SubscriptionType TypeOfSubscription { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public  MailAddress EmailAddress { get; set; }
-        public int CreditCardNumber { get; set; }
-        public DateTime ExpirationDate { get; set; }
+        public  string EmailAddress { get; set; }
+        public string Password { get; set; }
+        public string CreditCardNumber { get; set; }
+        public string ExpirationDate { get; set; }
         public string SocialSecurityNumber { get; set; }
-
         public bool IsActive { get; set; }
 
         public Subscription() {}
 
         public Subscription(SubscriptionType typeOfSubscription, string firstName, string lastName,
-            MailAddress emailAddress, int creditCardNumber, DateTime expirationDate,
+            string emailAddress, string password, string creditCardNumber, string expirationDate,
             string socialSecurityNumber, bool isActive)
         {
             TypeOfSubscription = typeOfSubscription;
@@ -34,6 +34,7 @@ namespace Repository
             ExpirationDate = expirationDate;
             SocialSecurityNumber = socialSecurityNumber;
             IsActive = isActive;
+            Password = password;
         }
     }
 }

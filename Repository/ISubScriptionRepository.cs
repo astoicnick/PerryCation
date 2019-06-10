@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Mail;
 
 namespace Repository
 {
@@ -12,6 +13,7 @@ namespace Repository
         List<Subscription> GetSubscriptionList();
         bool UpdateContent(Subscription toUpdate);
         bool RemoveContent(Subscription toRemove);
-
+        void CancelSubscription(Subscription toCancel);
+        bool VerifySubscriber(string emailToVerify, string passwordToVerify);
     }
 }
